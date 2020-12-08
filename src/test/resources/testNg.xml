@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="1">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="managers.TestListeners"/>
+    </listeners>
+    <test name="Let's Kode it Test">
+        <classes>
+            <class name="testRunners.RunCukesTest">
+            </class>
+        </classes>
+    </test>
+</suite>
